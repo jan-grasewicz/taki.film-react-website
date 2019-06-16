@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import Player from "./components/Player";
 
 class App extends Component {
   render() {
@@ -22,9 +23,9 @@ class App extends Component {
                 src="https://player.vimeo.com/video/313798158"
                 width="640"
                 height="320"
-                frameborder="0"
+                frameBorder="0"
                 allow="autoplay; fullscreen"
-                allowfullscreen
+                allowFullScreen
               />
               <p>Showreel</p>
             </div>
@@ -37,11 +38,15 @@ class App extends Component {
           </section>
           <section className="portfolio">
             <h2>Portfolio</h2>
+            <Player />
           </section>
           <section className="aboutUs">
             {/* mini carousel */}
             <h3>mini-carousel</h3>
-            <img src={process.env.PUBLIC_URL + '/img/Miniatura1.jpg'} alt={"taki.film at work"} />
+            <img
+              src={process.env.PUBLIC_URL + "/img/Miniatura1.jpg"}
+              alt={"taki.film at work"}
+            />
             <h3>Kim jesteśmy?</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
