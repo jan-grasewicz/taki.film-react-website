@@ -13,7 +13,7 @@ function Portfolio() {
 
   return (
     <section className="portfolio">
-      <Player portfolio={portfolio} />
+      <Player playlist={portfolio} />
     </section>
   );
 }

@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import PlayerCredits from "./PlayerCredits";
+import PlayerList from "./PlayerList";
+import PlayerInfo from "./PlayerInfo";
 
-function Player({ portfolio }) {
+function Player({ playlist }) {
   const [active, setActive] = useState({});
-  const initialState = portfolio[3];
+  const initialState = playlist[3];
 
   useEffect(() => {
     setActive(initialState || {});
@@ -23,24 +25,13 @@ function Player({ portfolio }) {
         allow="autoplay; fullscreen"
         allowFullScreen
       />
-      <ul>
-        {portfolio &&
-          portfolio.map(video => (
-            <li key={video.url}>
-              <p
-                onClick={e => handleClick(e, video)}
-                style={{ color: active && video.url === active.url && "red" }}
-              >
-                {video.title}
-              </p>
-            </li>
-          ))}
-      </ul>
+      <PlayerList
+        playlist={playlist}
+        handleClick={handleClick}
+        active={active}
+      />
       <div>
-        <div>
-          <h2>{active && active.fullTitle}</h2>
-          <p>{active && active.description}</p>
-        </div>
+        <PlayerInfo title={active.fullTitle} description={active.description} />
         <PlayerCredits credits={active && active.credits} />
       </div>
     </React.Fragment>

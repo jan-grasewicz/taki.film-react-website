@@ -13,7 +13,6 @@ function Introduction() {
           allow="autoplay; fullscreen"
           allowFullScreen
         />
-        <p>Showreel</p>
       </div>
       <h3>taki.film czyli jaki?</h3>
       <p>
