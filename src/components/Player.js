@@ -3,11 +3,10 @@ import PlayerCredits from "./PlayerCredits";
 
 function Player({ portfolio }) {
   const [active, setActive] = useState({});
-
   const initialState = portfolio[3];
 
   useEffect(() => {
-    setActive(initialState);
+    setActive(initialState || {});
   }, [initialState]);
 
   const handleClick = (e, video) => {
