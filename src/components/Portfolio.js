@@ -6,14 +6,13 @@ function Portfolio() {
   useEffect(() => {
     fetch(`${process.env.PUBLIC_URL}/data.json`)
       .then(response => response.json())
-      .then(data => setPortfolio(data.portfolio))
-//clean up todo
+      .then(data => setPortfolio(data.portfolio));
+    //clean up and error handle todo
     return () => {};
   }, []);
 
   return (
     <section className="portfolio">
-      <h2>Portfolio</h2>
       <Player portfolio={portfolio} />
     </section>
   );

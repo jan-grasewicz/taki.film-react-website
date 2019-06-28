@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PlayerCredits from "./PlayerCredits";
 
 function Player({ portfolio }) {
   const [active, setActive] = useState({});
@@ -36,6 +37,13 @@ function Player({ portfolio }) {
             </li>
           ))}
       </ul>
+      <div>
+        <div>
+          <h2>{active && active.fullTitle}</h2>
+          <p>{active && active.description}</p>
+        </div>
+        <PlayerCredits credits={active && active.credits} />
+      </div>
     </React.Fragment>
   );
 }
