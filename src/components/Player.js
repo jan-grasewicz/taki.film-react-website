@@ -32,7 +32,7 @@ function Player({ playlist }) {
       />
       <div>
         <PlayerInfo title={active.fullTitle} description={active.description} />
-        <PlayerCredits credits={active && active.credits} />
+        <PlayerCredits credits={active.credits} />
       </div>
     </React.Fragment>
   );

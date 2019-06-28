@@ -24,8 +24,6 @@ function Root() {
 }
 
 const Website = styled.div`
-  background-color: black;
-  color: ${props=>props.theme.white};
 `
 
 export default Root;
