@@ -19,7 +19,7 @@ function Player({ playlist }) {
     <React.Fragment>
       <iframe
         src={active && active.url}
-        width="640"
+        max-width="640"
         height="320"
         frameBorder="0"
         allow="autoplay; fullscreen"

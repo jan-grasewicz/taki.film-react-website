@@ -6,7 +6,7 @@ function AboutUs() {
     {/* mini carousel */}
     <h3>mini-carousel</h3>
     <img
-      src={process.env.PUBLIC_URL + "/img/Miniatura1.jpg"}
+      // src={process.env.PUBLIC_URL + "/img/Miniatura1.jpg"}
       alt={"taki.film at work"}
     />
     <h3>Kim jesteśmy?</h3>

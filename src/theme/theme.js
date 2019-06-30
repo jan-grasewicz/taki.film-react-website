@@ -2,13 +2,14 @@ import { css } from "styled-components"
 
 // media
 // desktop: 1920x1080
+//bp 1600
 // tablet: 1440x1080
+//bp 1000
 // phone: 375x667
 
 const screens = {
-  desktop: "1920",
-  tablet: "1440",
-  phone: "375"
+  desktop: "1600",
+  tablet: "1000"
 }
 
 export const theme = {

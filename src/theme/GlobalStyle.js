@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Muli', sans-serif;
     text-align: center;
     box-sizing: border-box;  
+    width: 100%;
   }
   
   body {
