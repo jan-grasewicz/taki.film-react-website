@@ -1,7 +1,9 @@
-import React from "react"
+import React, {useContext} from "react"
+import { SiteContext } from "../contexts/SiteContext"
 import styled from "styled-components"
 
 function Introduction() {
+  const { showreel } = useContext(SiteContext)
   return (
     <section className="introduction">
       <Title>
@@ -10,7 +12,7 @@ function Introduction() {
       </Title>
       <div className="showreel">
         <iframe
-          src="https://player.vimeo.com/video/313798158"
+          src={showreel.length&&showreel[0].url}
           max-width="640"
           height="320"
           frameBorder="0"

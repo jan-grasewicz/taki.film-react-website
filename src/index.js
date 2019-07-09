@@ -4,13 +4,14 @@ import Root from "./components/Root";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./theme/theme";
 import GlobalStyle from "./theme/GlobalStyle";
+import SiteContextProvider from "./contexts/SiteContext";
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
-    <React.Fragment>
+    <SiteContextProvider>
       <GlobalStyle />
       <Root />
-    </React.Fragment>
+    </SiteContextProvider>
   </ThemeProvider>,
   document.getElementById("root")
 );

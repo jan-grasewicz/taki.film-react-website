@@ -3,7 +3,6 @@ import React from 'react'
 function AboutUs() {
   return (
     <section className="aboutUs">
-    {/* mini carousel */}
     <h3>mini-carousel</h3>
     <img
       // src={process.env.PUBLIC_URL + "/img/Miniatura1.jpg"}
