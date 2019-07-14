@@ -5,7 +5,7 @@ import Logo from "../svg/Logo"
 function Header() {
   return (
     <HeaderContainer>
-      <Logo dotColor="#FFF" width="3.125rem" />
+      <Logo dotColor="#FFF" width="56.25px" />
       <Mail>hej@taki.film</Mail>
       <Contact>KONTAKT</Contact>
     </HeaderContainer>
@@ -26,7 +26,7 @@ const Mail = styled.address`
 const Contact = styled.a`
   font-size: ${props => props.theme.fontSize.xs};
   font-weight: 700;
-  padding-top: .2222rem;
+  padding-top: 4px;
 `
 
 export default Header

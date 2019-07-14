@@ -33,8 +33,8 @@ function Introduction() {
 const Title = styled.h1`
   font-size: ${props => props.theme.fontSize.title};
   font-weight: 800;
-  line-height: 2.9444rem;
-  padding: 2.5rem 0rem 1.3333rem;
+  line-height: 53px;
+  padding: 45px 0px 24px;
 `
 const ShowreelWrapper = styled.div`
   position: relative;
@@ -51,29 +51,29 @@ const Showreel = styled.iframe`
 `
 const Text = styled.div`
   text-align: left;
-  padding-top: 1.2222rem;
+  padding-top: 22px;
 `
 const Header = styled.h3`
   font-size: ${props => props.theme.fontSize.s};
   font-weight: 800;
-  line-height: 1.1111rem;
-  padding-bottom: 0.2778rem;
+  line-height: 20px;
+  padding-bottom: 5px;
 `
 const Descriotion = styled.p`
   font-size: ${props => props.theme.fontSize.xs};
   font-weight: 400;
-  line-height: 1rem;
+  line-height: 18px;
 `
 const Button = styled.button`
   font-size: ${props => props.theme.fontSize.xs};
   font-weight: 800;
-  line-height: 1rem;
+  line-height: 18px;
   color: ${props => props.theme.color.white};
   background-color: ${props => props.theme.color.lightblue};
   border: none;
   width: 100%;
-  height: 3.6111rem;
+  height: 65px;
 
-  margin: 1.6667rem 0px 2.2222rem;
+  margin: 30px 0px 40px;
 `
 export default Introduction
