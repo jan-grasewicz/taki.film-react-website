@@ -33,7 +33,6 @@ function Introduction() {
 const Title = styled.h1`
   font-size: ${props => props.theme.fontSize.xxdouble};
   font-weight: 800;
-  line-height: 3.3125rem;
   padding: 2.8125rem 0rem 1.5rem;
 `
 const ShowreelWrapper = styled.div`
@@ -56,18 +55,15 @@ const Text = styled.div`
 const Header = styled.h3`
   font-size: ${props => props.theme.fontSize.m};
   font-weight: 800;
-  line-height: 1.25rem;
   padding-bottom: 0.3125rem;
 `
 const Descriotion = styled.p`
   font-size: ${props => props.theme.fontSize.s};
   font-weight: 400;
-  line-height: 1.125rem;
 `
 const Button = styled.button`
   font-size: ${props => props.theme.fontSize.s};
   font-weight: 800;
-  line-height: 1.125rem;
   color: ${props => props.theme.color.white};
   background-color: ${props => props.theme.color.lightblue};
   border: none;
