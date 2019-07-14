@@ -24,6 +24,7 @@ function Root() {
 }
 
 const Website = styled.div`
+  overflow: hidden;
   padding: 1.875rem 1.875rem 0rem;
 `
 
