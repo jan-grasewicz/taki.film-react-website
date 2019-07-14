@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
   ${Reset}
   
   html, body {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Muli', sans-serif;
     text-align: center;
     box-sizing: border-box;  

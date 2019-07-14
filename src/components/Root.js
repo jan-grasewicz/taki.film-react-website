@@ -24,7 +24,7 @@ function Root() {
 }
 
 const Website = styled.div`
-  padding: 30px 30px 0px;
+  padding: 1.875rem 1.875rem 0rem;
 `
 
 export default Root;
