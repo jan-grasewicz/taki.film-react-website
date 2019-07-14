@@ -23,16 +23,16 @@ export const theme = {
     blue: "#0000FF"
   },
   fontSize: {
-    xtitle: "4.5rem", //72px
-    title: "2.625rem", //42px
-    xxxl: "2.25rem", //36px
-    xxl: "2rem", //32px
-    xl: "1.5rem", //24px
-    l: "1.25rem", //20px
-    m: "1.125rem", //18px
-    s: "1rem", //16px
-    xs: "0.875rem", //14px
-    xxs: "0.625rem" //10px
+    xxxdouble: "4.5rem", //72px
+    xxdouble: "2.625rem", //42px
+    xdouble: "2.25rem", //36px
+    double: "2rem", //32px
+    xxl: "1.5rem", //24px
+    xl: "1.25rem", //20px
+    l: "1.125rem", //18px
+    m: "1rem", //16px
+    s: "0.875rem", //14px
+    xs: "0.625rem" //10px
   },
   media: Object.keys(screens).reduce((acc, label) => {
     acc[label] = (...args) => css`

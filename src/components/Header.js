@@ -24,7 +24,7 @@ const Mail = styled.address`
   `}
 `
 const Contact = styled.a`
-  font-size: ${props => props.theme.fontSize.xs};
+  font-size: ${props => props.theme.fontSize.s};
   font-weight: 700;
   padding-top: 0.25rem;
 `
