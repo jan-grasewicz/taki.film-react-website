@@ -26,6 +26,10 @@ function Root() {
 const Website = styled.div`
   overflow: hidden;
   padding: 1.875rem 1.875rem 0rem;
+
+  margin: 0 auto;
+  max-width: 800px; /* temporary for mobile styles */
+
 `
 
 export default Root;
