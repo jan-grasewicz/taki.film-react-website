@@ -1,21 +1,36 @@
-import React from "react";
+import React from "react"
+import styled from "styled-components"
 
-function PlayerList({playlist, handleClick, active}) {
+function PlayerList({ playlist, handleClick, active }) {
   return (
-    <ul>
+    <List>
       {playlist &&
         playlist.map(video => (
-          <li key={video.url}>
-            <p
-              onClick={e => handleClick(e, video)}
-              style={{ color: video.url === active.url && "red" }}
-            >
-              {video.title}
-            </p>
-          </li>
+          <Item
+            key={video.url}
+            onClick={e => handleClick(e, video)}
+            isActive={video.url === active.url}
+          >
+            {video.title}
+          </Item>
         ))}
-    </ul>
-  );
+    </List>
+  )
 }
 
-export default PlayerList;
+const List = styled.ul`
+  display: flex;
+  align-items: center;
+  overflow: auto;
+
+  padding: 1.875rem 0rem;
+`
+const Item = styled.li`
+  color: ${props => props.theme.color[props.isActive ? "white" : "gray"]};
+  font-size: ${props => props.theme.fontSize[props.isActive ? "xxl" : "xs"]};
+  font-weight: 400;
+  white-space: nowrap;
+  padding: 0.3125rem;
+`
+
+export default PlayerList
