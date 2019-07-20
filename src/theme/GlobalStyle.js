@@ -16,6 +16,9 @@ const GlobalStyle = createGlobalStyle`
     color: ${props => props.theme.color.white};
     background-color: ${props => props.theme.color.black};
   }
+  button:focus {
+    outline: none;
+  }
 `;
 
 export default GlobalStyle;

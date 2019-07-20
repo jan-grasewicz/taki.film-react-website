@@ -32,7 +32,7 @@ const Contact = styled.a`
 `
 const BgRectangle = styled.div`
   background-color: ${props => props.theme.color.blue};
-  height:  270px;
+  height:  16.875rem;
   width: 100vw;
   position: absolute;
   z-index: -10;
