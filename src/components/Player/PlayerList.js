@@ -30,7 +30,7 @@ const Item = styled.li`
   font-size: ${props => props.theme.fontSize[props.isActive ? "xxl" : "xs"]};
   font-weight: 400;
   white-space: nowrap;
-  padding: 0.3125rem;
+  padding: 0rem 0.3125rem;
 `
 
 export default PlayerList
