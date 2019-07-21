@@ -80,22 +80,6 @@
               "Natty Lempke"
             ]
           }
-        ],
-        [
-          {
-            "name": "lights",
-            "entrys": [
-              "Rorke Murford",
-              "Hill Derrick",
-              "Natty Lempke"
-            ]
-          },
-          {
-            "name": "sound",
-            "entrys": [
-              "Teodoro Harmant"
-            ]
-          }
         ]
       ]
     },
@@ -124,6 +108,22 @@
             "entrys": [
               "Hill Derrick",
               "Natty Lempke"
+            ]
+          }
+        ],
+        [
+          {
+            "name": "lights",
+            "entrys": [
+              "Rorke Murford",
+              "Hill Derrick",
+              "Natty Lempke"
+            ]
+          },
+          {
+            "name": "sound",
+            "entrys": [
+              "Teodoro Harmant"
             ]
           }
         ],
