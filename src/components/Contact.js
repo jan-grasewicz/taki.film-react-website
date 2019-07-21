@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 function Contact() {
   return (
-    <Container>
+    <Container id="contact">
       <Title>taki.film</Title>
       <Desc>
         <p>

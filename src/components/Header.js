@@ -7,7 +7,7 @@ function Header() {
     <HeaderContainer>
       <Logo dotColor="#FFF" width="3.5156rem" />
       <Mail>hej@taki.film</Mail>
-      <Contact>KONTAKT</Contact>
+      <Contact href="#contact">KONTAKT</Contact>
       <BgRectangle />
     </HeaderContainer>
   )
@@ -26,13 +26,23 @@ const Mail = styled.address`
   `}
 `
 const Contact = styled.a`
+  padding-top: 0.25rem;
+  color: ${props => props.theme.color.white};
   font-size: ${props => props.theme.fontSize.s};
   font-weight: 700;
-  padding-top: 0.25rem;
+
+  &:active {
+    text-decoration: underline;
+  }
+  @media (pointer: fine) and (hover: hover) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `
 const BgRectangle = styled.div`
   background-color: ${props => props.theme.color.blue};
-  height:  16.875rem;
+  height: 16.875rem;
   width: 100vw;
   position: absolute;
   z-index: -10;

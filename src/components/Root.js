@@ -1,12 +1,12 @@
-import React from "react";
-import Header from "./Header";
-import Introduction from "./Introduction";
-import Portfolio from "./Portfolio";
-import AboutUs from "./AboutUs";
-import Contact from "./Contact";
-import Footer from "./Footer";
+import React from "react"
+import Header from "./Header"
+import Introduction from "./Introduction"
+import Portfolio from "./Portfolio"
+import AboutUs from "./AboutUs"
+import Contact from "./Contact"
+import Footer from "./Footer"
 
-import styled from 'styled-components'
+import styled from "styled-components"
 
 function Root() {
   return (
@@ -20,7 +20,7 @@ function Root() {
       </main>
       <Footer />
     </Website>
-  );
+  )
 }
 
 const Website = styled.div`
@@ -29,7 +29,6 @@ const Website = styled.div`
 
   margin: 0 auto;
   max-width: 800px; /* temporary for mobile styles */
-
 `
 
-export default Root;
+export default Root
