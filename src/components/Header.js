@@ -18,6 +18,7 @@ const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   position: relative;
+  padding-top: 1.875rem;
 `
 const Mail = styled.address`
   display: none;
@@ -46,7 +47,7 @@ const BgRectangle = styled.div`
   width: 100vw;
   position: absolute;
   z-index: -10;
-  top: -1.875rem; /* padding from Root */
+  top: 0rem;
   left: -1.875rem; /* padding from Root */
 `
 
