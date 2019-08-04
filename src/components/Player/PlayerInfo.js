@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
-function PlayerInfo({ title, description }) {
+const PlayerInfo = ({ title, description }) => {
   return (
     <Container>
       <Title>{title}</Title>

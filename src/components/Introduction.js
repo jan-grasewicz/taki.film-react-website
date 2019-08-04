@@ -1,11 +1,11 @@
-import React, { useContext } from "react"
-import { SiteContext } from "../contexts/SiteContext"
-import styled from "styled-components"
+import React, { useContext } from 'react'
+import { SiteContext } from '../contexts/SiteContext'
+import styled from 'styled-components'
 
-function Introduction() {
+const Introduction = () => {
   const { showreel } = useContext(SiteContext)
   return (
-    <section className="introduction">
+    <section className='introduction'>
       <Title>
         Cześć, <br />
         tu taki.film
@@ -13,8 +13,8 @@ function Introduction() {
       <ShowreelWrapper>
         <Showreel
           src={showreel.length && showreel[0].url}
-          frameBorder="0"
-          allow="autoplay; fullscreen"
+          frameBorder='0'
+          allow='autoplay; fullscreen'
           allowFullScreen
         />
       </ShowreelWrapper>
@@ -24,7 +24,7 @@ function Introduction() {
           Taki który przyciąga uwagę, zapada w pamięć i&nbsp;wyróżnia się
           jakością.
         </Descriotion>
-      <Button>NAPISZ DO NAS</Button>
+        <Button>NAPISZ DO NAS</Button>
       </Text>
     </section>
   )

@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
-function PlayerCredits({ credits }) {
+const PlayerCredits = ({ credits }) => {
   return (
     <StyledTable>
       {credits.length !== 0 &&
@@ -11,7 +11,7 @@ function PlayerCredits({ credits }) {
               <tbody key={`section-${index + 1}`}>
                 {index !== 0 && (
                   <tr>
-                    <td colSpan="2">
+                    <td colSpan='2'>
                       <DividerLine />
                     </td>
                   </tr>

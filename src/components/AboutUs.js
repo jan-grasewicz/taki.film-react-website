@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import LoseSidePadding from '../elements/LoseSidePadding'
 
-function AboutUs() {
+const AboutUs = () => {
   return (
     <Container>
       <LogoCarousel>{'<<  Logo-Carousel  >>'}</LogoCarousel>

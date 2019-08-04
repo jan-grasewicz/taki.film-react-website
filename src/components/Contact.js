@@ -1,9 +1,9 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
-function Contact() {
+const Contact = () => {
   return (
-    <Container id="contact">
+    <Container id='contact'>
       <Title>taki.film</Title>
       <Desc>
         <p>

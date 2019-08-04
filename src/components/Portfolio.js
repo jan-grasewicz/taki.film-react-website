@@ -1,11 +1,11 @@
-import React, { useContext } from "react"
-import { SiteContext } from "../contexts/SiteContext"
-import Player from "./Player/Player"
+import React, { useContext } from 'react'
+import { SiteContext } from '../contexts/SiteContext'
+import Player from './Player/Player'
 
-function Portfolio() {
+const Portfolio = () => {
   const { portfolio } = useContext(SiteContext)
   return (
-    <section className="portfolio">
+    <section className='portfolio'>
       <Player playlist={portfolio} />
     </section>
   )

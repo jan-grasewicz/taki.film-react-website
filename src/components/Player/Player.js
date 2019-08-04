@@ -6,7 +6,7 @@ import PlayerList from './PlayerList'
 import PlayerInfo from './PlayerInfo'
 import LoseSidePadding from '../../elements/LoseSidePadding'
 
-function Player({ playlist }) {
+const Player = ({ playlist }) => {
   const [active, setActive] = useState({})
   const initialState = playlist[3]
 

@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
-import Reset from "./Reset";
+import { createGlobalStyle } from 'styled-components'
+import Reset from './Reset'
 
 const GlobalStyle = createGlobalStyle`
   ${Reset}
@@ -19,6 +19,6 @@ const GlobalStyle = createGlobalStyle`
   button:focus {
     outline: none;
   }
-`;
+`
 
-export default GlobalStyle;
+export default GlobalStyle

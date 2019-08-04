@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Logo from '../svg/Logo'
 import LoseSidePadding from '../elements/LoseSidePadding'
 
-function Header() {
+const Header = () => {
   return (
     <LoseSidePadding>
       <HeaderContainer>

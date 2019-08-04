@@ -1,14 +1,14 @@
-import React from "react"
-import Header from "./Header"
-import Introduction from "./Introduction"
-import Portfolio from "./Portfolio"
-import AboutUs from "./AboutUs"
-import Contact from "./Contact"
-import Footer from "./Footer"
+import React from 'react'
+import Header from './Header'
+import Introduction from './Introduction'
+import Portfolio from './Portfolio'
+import AboutUs from './AboutUs'
+import Contact from './Contact'
+import Footer from './Footer'
 
-import styled from "styled-components"
+import styled from 'styled-components'
 
-function Root() {
+const Root = () => {
   return (
     <Website>
       <Header />
