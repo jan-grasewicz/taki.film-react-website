@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react"
-import styled from "styled-components"
+import React, { useState, useEffect } from 'react'
+import styled from 'styled-components'
 
-import PlayerCredits from "./PlayerCredits"
-import PlayerList from "./PlayerList"
-import PlayerInfo from "./PlayerInfo"
+import PlayerCredits from './PlayerCredits'
+import PlayerList from './PlayerList'
+import PlayerInfo from './PlayerInfo'
+import LoseSidePadding from '../../elements/LoseSidePadding'
 
 function Player({ playlist }) {
   const [active, setActive] = useState({})
@@ -19,23 +20,23 @@ function Player({ playlist }) {
 
   return (
     <React.Fragment>
-      <LosePaddingWrapper>
+      <LoseSidePadding>
         <IFrameWrapper>
           <IFrame
-          src={active && active.url}
-          max-width="640"
-          height="320"
-          frameBorder="0"
-          allow="autoplay; fullscreen"
-          allowFullScreen
-        />
+            src={active && active.url}
+            max-width='640'
+            height='320'
+            frameBorder='0'
+            allow='autoplay; fullscreen'
+            allowFullScreen
+          />
         </IFrameWrapper>
         <PlayerList
           playlist={playlist}
           handleClick={handleClick}
           active={active}
         />
-      </LosePaddingWrapper>
+      </LoseSidePadding>
       <div>
         <PlayerInfo title={active.fullTitle} description={active.description} />
         <PlayerCredits credits={active.credits} />
@@ -44,12 +45,6 @@ function Player({ playlist }) {
   )
 }
 
-const LosePaddingWrapper = styled.div`
-  position: relative;
-  left: -1.875rem; /* padding from Root */
-  width: calc(1.875rem * 2 + 100%); /* padding from Root times two */
-
-`
 const IFrameWrapper = styled.div`
   position: relative;
   padding-top: 56.5%; /* video aspect ratio */

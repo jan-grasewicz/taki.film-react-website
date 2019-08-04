@@ -1,13 +1,14 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
+import LoseSidePadding from '../elements/LoseSidePadding'
 
 function AboutUs() {
   return (
     <Container>
-      <LogoCarousel>{"<<  Logo-Carousel  >>"}</LogoCarousel>
+      <LogoCarousel>{'<<  Logo-Carousel  >>'}</LogoCarousel>
       <Photo
-        src={process.env.PUBLIC_URL + "/img/Miniatura1.jpg"}
-        alt={"taki.film at work"}
+        src={process.env.PUBLIC_URL + '/img/Miniatura1.jpg'}
+        alt={'taki.film at work'}
       />
       <Title>Kim jesteśmy?</Title>
       <Desc>
@@ -16,14 +17,15 @@ function AboutUs() {
         delectus, debitis natus voluptas laborum nisi numquam fugit illum
         sapiente ad suscipit.
       </Desc>
-      <BgRectangle />
+      <LoseSidePadding>
+        <BgRectangle />
+      </LoseSidePadding>
     </Container>
   )
 }
 
-const Container = styled.section`
-  position: relative;
-`
+const Container = styled.section``
+
 const LogoCarousel = styled.h3`
   display: flex;
   align-items: center;
@@ -45,11 +47,11 @@ const Desc = styled.p`
 `
 const BgRectangle = styled.div`
   background-color: ${props => props.theme.color.lightblue};
-  height:  24.625rem;
+  height: 24.625rem;
   width: 100vw;
   position: absolute;
-  z-index: -10;
   bottom: 0rem;
-  left: -1.875rem; /* padding from Root */
-  `
+  left: 0rem;
+  z-index: -10;
+`
 export default AboutUs

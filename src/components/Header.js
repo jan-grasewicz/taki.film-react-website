@@ -1,15 +1,18 @@
-import React from "react"
-import styled from "styled-components"
-import Logo from "../svg/Logo"
+import React from 'react'
+import styled from 'styled-components'
+import Logo from '../svg/Logo'
+import LoseSidePadding from '../elements/LoseSidePadding'
 
 function Header() {
   return (
-    <HeaderContainer>
-      <Logo dotColor="#FFF" width="3.5156rem" />
-      <Mail>hej@taki.film</Mail>
-      <Contact href="#contact">KONTAKT</Contact>
-      <BgRectangle />
-    </HeaderContainer>
+    <LoseSidePadding>
+      <HeaderContainer>
+        <Logo dotColor='#FFF' width='3.5156rem' />
+        <Mail>hej@taki.film</Mail>
+        <Contact href='#contact'>KONTAKT</Contact>
+        <BgRectangle />
+      </HeaderContainer>
+    </LoseSidePadding>
   )
 }
 
@@ -17,8 +20,7 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  padding-top: 1.875rem;
+  padding: 1.875rem 1.875rem 0rem;
 `
 const Mail = styled.address`
   display: none;
@@ -48,7 +50,7 @@ const BgRectangle = styled.div`
   position: absolute;
   z-index: -10;
   top: 0rem;
-  left: -1.875rem; /* padding from Root */
+  left: 0rem;
 `
 
 export default Header
