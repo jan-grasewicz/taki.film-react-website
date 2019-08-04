@@ -4,7 +4,7 @@ const screens = {
   // desktop: 1920x1080
   desktop: '1600',
   // tablet: 1440x1080
-  tablet: '1000'
+  tablet: '800'
   // phone: 375x667
 }
 
@@ -47,5 +47,10 @@ export const theme = {
       }
     `
     return acc
-  }, {})
+  }, {}),
+  mainPadding: {
+    large: '11.125rem',
+    medium: '3.125rem',
+    small: '1.875rem'
+  }
 }

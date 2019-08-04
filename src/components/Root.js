@@ -25,10 +25,16 @@ const Root = () => {
 
 const Website = styled.div`
   overflow: hidden;
-  padding: 0rem 1.875rem;
-
   margin: 0 auto;
-  max-width: 800px; /* temporary for mobile styles */
+  max-width: 900px; /* temporary for mobile styles */
+
+  padding: 0rem ${props => props.theme.mainPadding.small};
+  ${props => props.theme.media.tablet`
+      padding: 0rem ${props => props.theme.mainPadding.medium};  
+    `}
+  ${props => props.theme.media.desktop`
+      padding: 0rem ${props => props.theme.mainPadding.large};  
+    `}
 `
 
 export default Root
