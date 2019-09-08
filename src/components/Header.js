@@ -20,7 +20,19 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  font-size: ${props => props.theme.fontSize.s};
   padding: 1.875rem 1.875rem 0rem;
+
+  ${props => props.theme.media.tablet`
+    align-items: flex-end;
+    font-size: ${props => props.theme.fontSize.xl};
+    padding: 2.625rem 2.625rem 0rem;
+  `}
+  ${props => props.theme.media.desktop`
+    align-items: center;
+    padding-left: 3.375rem;
+  `}
 `
 const Mail = styled.address`
   display: none;
@@ -29,9 +41,7 @@ const Mail = styled.address`
   `}
 `
 const Contact = styled.a`
-  padding-top: 0.25rem;
   color: ${props => props.theme.color.white};
-  font-size: ${props => props.theme.fontSize.s};
   font-weight: 700;
 
   &:active {
@@ -51,6 +61,9 @@ const BgRectangle = styled.div`
   z-index: -10;
   top: 0rem;
   left: 0rem;
+  ${props => props.theme.media.tablet`
+    height: 33.75rem;
+  `}
 `
 
 export default Header

@@ -7,6 +7,7 @@ const Logo = ({ mainColor, dotColor, width, height, ...rest }) => {
         id='Layer_1'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 262 214.1'
+        style={{ display: 'block' }}
       >
         <path
           className='st0'

@@ -26,7 +26,7 @@ const Root = () => {
 const Website = styled.div`
   overflow: hidden;
   margin: 0 auto;
-  max-width: 900px; /* temporary for mobile styles */
+  max-width: 1920px;
 
   padding: 0rem ${props => props.theme.mainPadding.small};
   ${props => props.theme.media.tablet`

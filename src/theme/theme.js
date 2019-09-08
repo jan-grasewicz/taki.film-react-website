@@ -4,7 +4,7 @@ const screens = {
   // desktop: 1920x1080
   desktop: '1600',
   // tablet: 1440x1080
-  tablet: '800'
+  tablet: '900'
   // phone: 375x667
 }
 
