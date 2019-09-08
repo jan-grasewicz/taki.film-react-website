@@ -10,11 +10,12 @@ const GlobalStyle = createGlobalStyle`
     text-align: center;
     box-sizing: border-box;  
     width: 100%;
+    scroll-behavior: smooth;
   }
   
   body {
-    color: ${props => props.theme.color.white};
-    background-color: ${props => props.theme.color.black};
+    color: ${({theme}) => theme.color.white};
+    background-color: ${({theme}) => theme.color.black};
   }
   button:focus {
     outline: none;
