@@ -1,15 +1,15 @@
 import React, { useContext } from 'react'
-import { SiteContext } from '../contexts/SiteContext'
 import styled from 'styled-components'
+import { SiteContext } from '../contexts/SiteContext'
 
 const Introduction = () => {
   const { showreel } = useContext(SiteContext)
   return (
-    <section className='introduction'>
-      <Title>
+    <Container>
+      <TitleMobile>
         Cześć, <br />
         tu taki.film
-      </Title>
+      </TitleMobile>
       <ShowreelWrapper>
         <Showreel
           src={showreel.length && showreel[0].url}
@@ -19,26 +19,54 @@ const Introduction = () => {
         />
       </ShowreelWrapper>
       <Text>
+        <TitleDesktop>
+          Cześć, <br />
+          tu taki.film
+        </TitleDesktop>
         <Header>taki.film czyli jaki?</Header>
-        <Descriotion>
+        <Description>
           Taki który przyciąga uwagę, zapada w pamięć i&nbsp;wyróżnia się
           jakością.
-        </Descriotion>
+        </Description>
         <Button>NAPISZ DO NAS</Button>
       </Text>
-    </section>
+      <BgRectangle />
+    </Container>
   )
 }
-
-const Title = styled.h1`
-  font-size: ${props => props.theme.fontSize.xxdouble};
+const Container = styled.section`
+  position: relative;
+  ${({ theme }) => theme.media.tablet`
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  `}
+`
+const TitleMobile = styled.h1`
+  font-size: ${({ theme }) => theme.fontSize.xxdouble};
   font-weight: 800;
   padding: 2.8125rem 0rem 1.5rem;
+  ${({ theme }) => theme.media.tablet`
+    display: none;
+  `}
+`
+const TitleDesktop = styled.h1`
+  display: none;
+  ${({ theme }) => theme.media.tablet`
+    display: block;
+    font-size: ${({ theme }) => theme.fontSize.xxxdouble};
+    font-weight: 800;
+    padding: 11.4375rem 0rem 9.9375rem;
+  `}
 `
 const ShowreelWrapper = styled.div`
   position: relative;
   padding-top: 50%; /* video aspect ratio */
   overflow: hidden;
+  ${({ theme }) => theme.media.tablet`
+    width: 70%;
+    padding-top: 35%;
+  `}
 `
 const Showreel = styled.iframe`
   position: absolute;
@@ -51,25 +79,56 @@ const Showreel = styled.iframe`
 const Text = styled.div`
   text-align: left;
   padding-top: 1.375rem;
+  ${({ theme }) => theme.media.tablet`
+    width: 30%;
+  `}
 `
 const Header = styled.h3`
-  font-size: ${props => props.theme.fontSize.m};
+  font-size: ${({ theme }) => theme.fontSize.m};
   font-weight: 800;
   padding-bottom: 0.3125rem;
+  ${({ theme }) => theme.media.tablet`
+    font-size: ${({ theme }) => theme.fontSize.l};
+    padding-bottom: 1.1875rem
+  `}
 `
-const Descriotion = styled.p`
-  font-size: ${props => props.theme.fontSize.s};
+const Description = styled.p`
+  font-size: ${({ theme }) => theme.fontSize.s};
   font-weight: 400;
+  ${({ theme }) => theme.media.tablet`
+    font-size: ${({ theme }) => theme.fontSize.m};
+  `}
 `
 const Button = styled.button`
-  font-size: ${props => props.theme.fontSize.s};
+  font-size: ${({ theme }) => theme.fontSize.s};
   font-weight: 800;
-  color: ${props => props.theme.color.white};
-  background-color: ${props => props.theme.color.lightblue};
+  color: ${({ theme }) => theme.color.white};
+  background-color: ${({ theme }) => theme.color.lightblue};
   border: none;
   width: 100%;
   height: 4.0625rem;
 
   margin: 1.875rem 0rem 2.5rem;
+  ${({ theme }) => theme.media.tablet`
+    font-size: ${({ theme }) => theme.fontSize.l};
+    width: 20.1875rem;
+    margin: 5.6875rem 0rem 14.6875rem;
+  `}
+`
+const BgRectangle = styled.div`
+  display: none;
+  ${({ theme }) => theme.media.tablet`
+    display: initial;
+    background-color: ${({ theme }) => theme.color.blue};
+    width: 100vw;
+    height: 50%;
+    z-index: -10;
+    position: absolute;
+    top: 0rem;
+    left: -${({ theme }) => theme.mainPadding.medium};
+  `}
+  ${({ theme }) => theme.media.desktop`
+    left: -${({ theme }) => theme.mainPadding.large};
+  `}
 `
 export default Introduction
