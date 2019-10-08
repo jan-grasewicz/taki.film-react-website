@@ -12,10 +12,10 @@ const AboutUs = () => {
       />
       <Title>Kim jesteśmy?</Title>
       <Desc>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, earum!
-        Iure provident consequatur maxime, nesciunt, molestiae velit repellat
-        delectus, debitis natus voluptas laborum nisi numquam fugit illum
-        sapiente ad suscipit.
+        Ekipą z trójmiasta która kocha tworzyć filmy.<br />
+        Marka taki.film jest odpowiedzią na potrzeby naszych dotychczasowych
+        klientów. Wcześniej działaliśmy pod marką SureArts.<br />
+        Działamy na terenie całego świata i nie boimy się żadnych wyzwań.
       </Desc>
       <LoseSidePadding>
         <BgRectangle />
