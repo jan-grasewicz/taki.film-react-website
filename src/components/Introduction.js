@@ -40,6 +40,10 @@ const Container = styled.section`
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    margin-bottom: 5.6875rem;
+  `}
+  ${({ theme }) => theme.media.desktop`
+    margin-bottom: 3.5rem;
   `}
 `
 const TitleMobile = styled.h1`
@@ -57,6 +61,9 @@ const TitleDesktop = styled.h1`
     font-size: ${({ theme }) => theme.fontSize.xxxdouble};
     font-weight: 800;
     padding: 11.4375rem 0rem 9.9375rem;
+  `}
+  ${({ theme }) => theme.media.desktop`
+    padding-top: 10.5rem;
   `}
 `
 const ShowreelWrapper = styled.div`
@@ -80,7 +87,9 @@ const Text = styled.div`
   text-align: left;
   padding-top: 1.375rem;
   ${({ theme }) => theme.media.tablet`
+    padding-top: 0rem;
     width: 30%;
+    min-width: 400px;
   `}
 `
 const Header = styled.h3`
@@ -97,6 +106,7 @@ const Description = styled.p`
   font-weight: 400;
   ${({ theme }) => theme.media.tablet`
     font-size: ${({ theme }) => theme.fontSize.m};
+    max-width: 400px;
   `}
 `
 const Button = styled.button`
@@ -112,7 +122,7 @@ const Button = styled.button`
   ${({ theme }) => theme.media.tablet`
     font-size: ${({ theme }) => theme.fontSize.l};
     width: 20.1875rem;
-    margin: 5.6875rem 0rem 14.6875rem;
+    margin: 5.6875rem 0rem 9rem;
   `}
 `
 const BgRectangle = styled.div`

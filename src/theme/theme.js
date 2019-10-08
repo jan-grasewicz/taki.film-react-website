@@ -2,9 +2,9 @@ import { css } from 'styled-components'
 
 const screens = {
   // desktop: 1920x1080
-  desktop: '1600',
+  desktop: '1800',
   // tablet: 1440x1080
-  tablet: '900'
+  tablet: '1100'
   // phone: 375x667
 }
 
