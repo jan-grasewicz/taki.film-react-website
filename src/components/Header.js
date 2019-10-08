@@ -66,7 +66,7 @@ const BgRectangle = styled.div`
   top: 0rem;
   left: 0rem;
   ${({ theme }) => theme.media.tablet`
-    height: 100%;
+    height: 101%;
   `}
 `
 
