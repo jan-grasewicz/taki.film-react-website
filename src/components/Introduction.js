@@ -89,7 +89,7 @@ const Text = styled.div`
   ${({ theme }) => theme.media.tablet`
     padding-top: 0rem;
     width: 30%;
-    min-width: 400px;
+    min-width: 25rem;
   `}
 `
 const Header = styled.h3`
@@ -106,7 +106,7 @@ const Description = styled.p`
   font-weight: 400;
   ${({ theme }) => theme.media.tablet`
     font-size: ${({ theme }) => theme.fontSize.m};
-    max-width: 400px;
+    max-width: 25rem;
   `}
 `
 const Button = styled.button`

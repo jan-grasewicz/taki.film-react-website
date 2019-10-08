@@ -48,7 +48,7 @@ const StyledTable = styled.table`
   text-align: left;
   white-space: nowrap;
   width: 100%;
-  max-width: 420px;
+  max-width: 26.25rem;
   margin: 0 auto;
 
   ${({ theme }) => theme.media.tablet`

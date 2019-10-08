@@ -31,7 +31,7 @@ const LogoCarousel = styled.h3`
   align-items: center;
   justify-content: center;
   color: ${props => props.theme.color.lightGray};
-  height: 56px;
+  height: 3.5rem;
 `
 const Photo = styled.img`
   padding: 1.875rem 0rem 0.625rem;

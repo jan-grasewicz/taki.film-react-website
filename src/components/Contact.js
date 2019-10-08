@@ -62,7 +62,7 @@ const Button = styled.button`
   font-size: ${({ theme }) => theme.fontSize.xxl};
   background-color: transparent;
   border: 1px solid ${({ theme }) => theme.color.darkGray};
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
 
   ${({ theme }) => theme.media.tablet`
     font-size: ${({ theme }) => theme.fontSize.double};

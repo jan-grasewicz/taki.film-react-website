@@ -12,7 +12,7 @@ const PlayerDesc = ({ title, description }) => {
 }
 
 const Container = styled.div`
-  padding: 0.625rem 0rem 30px;
+  padding: 0.625rem 0rem 1.875rem;
   text-align: left;
 
   ${({ theme }) => theme.media.tablet`
