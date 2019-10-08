@@ -28,12 +28,12 @@ const Website = styled.div`
   margin: 0 auto;
   max-width: 1920px;
 
-  padding: 0rem ${props => props.theme.mainPadding.small};
-  ${props => props.theme.media.tablet`
-      padding: 0rem ${props => props.theme.mainPadding.medium};  
+  padding: 0rem ${({ theme }) => theme.mainPadding.small};
+  ${({ theme }) => theme.media.tablet`
+      padding: 0rem ${theme.mainPadding.medium};  
     `}
-  ${props => props.theme.media.desktop`
-      padding: 0rem ${props => props.theme.mainPadding.large};  
+  ${({ theme }) => theme.media.desktop`
+      padding: 0rem ${theme.mainPadding.large};  
     `}
 `
 
