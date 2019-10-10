@@ -1,12 +1,13 @@
 import React from 'react'
+import styled from 'styled-components'
 import Header from './Header'
 import Introduction from './Introduction'
 import Portfolio from './Portfolio'
+import Carousel from './Carousel'
 import AboutUs from './AboutUs'
 import Contact from './Contact'
 import Footer from './Footer'
 
-import styled from 'styled-components'
 
 const Root = () => {
   return (
@@ -15,6 +16,7 @@ const Root = () => {
       <main>
         <Introduction />
         <Portfolio />
+        <Carousel>{'<<-Carousel->>'}</Carousel>
         <AboutUs />
         <Contact />
       </main>
