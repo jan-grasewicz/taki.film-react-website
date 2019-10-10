@@ -19,11 +19,11 @@ const AboutUs = () => {
             klientów. Wcześniej działaliśmy pod marką SureArts. Działamy na
             terenie całego świata i nie boimy się żadnych wyzwań.
           </Desc>
+          <StyledLoseSidePadding>
+            <BgRectangle />
+          </StyledLoseSidePadding>
         </Text>
       </Content>
-      <LoseSidePadding>
-        <BgRectangle />
-      </LoseSidePadding>
     </Container>
   )
 }
@@ -44,6 +44,8 @@ const Photo = styled.img`
   `}
 `
 const Text = styled.div`
+  box-sizing: border-box;
+  position: relative;
   padding-top: 0.625rem;
   padding-bottom: 1.25rem;
   ${({ theme }) => theme.media.tablet`
@@ -51,11 +53,12 @@ const Text = styled.div`
     padding: 5.4375rem 0rem;
     padding-right: 3.5rem;
     padding-left: 4.5rem;
-    min-width: 30.8125rem;
+    min-width: 42.0625rem;
   `}
   ${({ theme }) => theme.media.desktop`
     padding-right: 4.9375rem;
     padding-left: 5.9375rem;
+    min-width: 57.9375rem;
   `}
 `
 const Title = styled.h3`
@@ -73,13 +76,26 @@ const Desc = styled.p`
     font-size: ${props => props.theme.fontSize.l};
   `}
 `
+const StyledLoseSidePadding = styled(LoseSidePadding)`
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0rem;
+  ${({ theme }) => theme.media.tablet`
+    height: 100%;
+  `}
+`
 const BgRectangle = styled.div`
+  box-sizing: border-box;
   background-color: ${props => props.theme.color.lightblue};
   height: 24.625rem;
   width: 100vw;
   position: absolute;
-  bottom: 0rem;
-  left: 0rem;
+  top: 0rem;
+  right: 0rem;
   z-index: -10;
+  ${({ theme }) => theme.media.tablet`
+    height: 100%;
+  `}
 `
+
 export default AboutUs
