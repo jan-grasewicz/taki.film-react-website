@@ -1,19 +1,24 @@
 import styled from 'styled-components'
 
+const addMinusIfBoolean = (string, boolean) => (boolean ? '-' + string : string)
+
 const LoseSidePadding = styled.div`
-  position: relative;
-
+  position: ${({ posAbsolute }) => (posAbsolute ? 'absolute' : 'relative')};
   width: 100vw;
-  left: -${props => props.theme.mainPadding.small};
+  right: ${({ theme, posAbsolute }) =>
+    addMinusIfBoolean(theme.mainPadding.small, posAbsolute)};
 
-  ${props => props.theme.media.tablet`
+  ${({ theme }) => theme.media.tablet`
       width: 100vw;
-      left: -${props => props.theme.mainPadding.medium};  
+      right: ${({ theme, posAbsolute }) =>
+        addMinusIfBoolean(theme.mainPadding.medium, posAbsolute)};  
     `}
 
-  ${props => props.theme.media.desktop`
+  ${({ theme }) => theme.media.desktop`
       width: 100vw;
-      left: -${props => props.theme.mainPadding.large};  
+      right: ${({ theme, posAbsolute }) =>
+        addMinusIfBoolean(theme.mainPadding.large, posAbsolute)};
     `}
 `
+
 export default LoseSidePadding

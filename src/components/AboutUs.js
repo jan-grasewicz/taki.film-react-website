@@ -19,7 +19,7 @@ const AboutUs = () => {
             klientów. Wcześniej działaliśmy pod marką SureArts. Działamy na
             terenie całego świata i nie boimy się żadnych wyzwań.
           </Desc>
-          <StyledLoseSidePadding>
+          <StyledLoseSidePadding posAbsolute>
             <BgRectangle />
           </StyledLoseSidePadding>
         </Text>
@@ -53,12 +53,12 @@ const Text = styled.div`
     padding: 5.4375rem 0rem;
     padding-right: 3.5rem;
     padding-left: 4.5rem;
-    min-width: 42.0625rem;
+    // min-width: 42.0625rem;
   `}
   ${({ theme }) => theme.media.desktop`
     padding-right: 4.9375rem;
     padding-left: 5.9375rem;
-    min-width: 57.9375rem;
+    // min-width: 57.9375rem;
   `}
 `
 const Title = styled.h3`
@@ -74,12 +74,12 @@ const Desc = styled.p`
   ${({ theme }) => theme.media.tablet`
     padding-top: 2.5rem;
     font-size: ${props => props.theme.fontSize.l};
+    max-width: 52.5625rem;
   `}
 `
 const StyledLoseSidePadding = styled(LoseSidePadding)`
-  box-sizing: border-box;
-  position: absolute;
   bottom: 0rem;
+  right: 0rem;
   ${({ theme }) => theme.media.tablet`
     height: 100%;
   `}
