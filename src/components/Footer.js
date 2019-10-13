@@ -8,10 +8,10 @@ const Footer = () => {
   return (
     <Container>
       <Wrapper>
-        <Link href={links.facebook}>facebook</Link>
-        <Link href={links.instagram}>instagram</Link>
+        <Link href={links && links.facebook}>facebook</Link>
+        <Link href={links && links.instagram}>instagram</Link>
       </Wrapper>
-      <Link href={links.takifilm}>taki.film 2019</Link>
+      <Link href={links && links.takifilm}>taki.film 2019</Link>
     </Container>
   )
 }
