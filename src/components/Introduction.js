@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import styled from 'styled-components'
 import { SiteContext } from '../contexts/SiteContext'
+import LoseSidePadding from '../elements/LoseSidePadding'
+
 
 const Introduction = () => {
   const { showreel } = useContext(SiteContext)
@@ -12,7 +14,7 @@ const Introduction = () => {
       </TitleMobile>
       <ShowreelWrapper>
         <Showreel
-          src={showreel.length && showreel[0].url}
+          src={showreel && showreel.url}
           frameBorder='0'
           allow='autoplay; fullscreen'
           allowFullScreen
@@ -30,7 +32,9 @@ const Introduction = () => {
         </Description>
         <Button>NAPISZ DO NAS</Button>
       </Text>
-      <BgRectangle />
+      <StyledLoseSidePadding posAbsolute>
+        <BgRectangle />
+      </StyledLoseSidePadding>
     </Container>
   )
 }
@@ -125,6 +129,11 @@ const Button = styled.button`
     margin: 5.6875rem 0rem 9rem;
   `}
 `
+const StyledLoseSidePadding = styled(LoseSidePadding)`
+  height: 100%;
+  z-index: -10;
+  top: 0rem;
+`
 const BgRectangle = styled.div`
   display: none;
   ${({ theme }) => theme.media.tablet`
@@ -132,13 +141,10 @@ const BgRectangle = styled.div`
     background-color: ${({ theme }) => theme.color.blue};
     width: 100vw;
     height: 50%;
-    z-index: -10;
     position: absolute;
     top: 0rem;
-    left: -${({ theme }) => theme.mainPadding.medium};
+    right: 0rem;
   `}
-  ${({ theme }) => theme.media.desktop`
-    left: -${({ theme }) => theme.mainPadding.large};
-  `}
+
 `
 export default Introduction

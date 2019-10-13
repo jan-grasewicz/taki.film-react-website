@@ -1,11 +1,12 @@
 {
-  "showreel": [
-    {
-      "title": "Showreel",
-      "fullTitle": "taki.film showreel",
-      "url": "https://player.vimeo.com/video/313798158"
-    }
-  ],
+  "links": {
+    "facebook": "https://www.facebook.com",
+    "instagram": "https://www.instagram.com",
+    "takifilm": ""
+  },
+  "showreel": {
+    "url": "https://player.vimeo.com/video/313798158"
+  },
   "portfolio": [
     {
       "title": "SDA",

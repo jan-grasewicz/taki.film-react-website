@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components'
+import { SiteContext } from '../contexts/SiteContext'
 
 const Footer = () => {
+  const { links } = useContext(SiteContext)
+
   return (
     <Container>
       <Wrapper>
-        <Link href='https://www.facebook.com'>facebook</Link>
-        <Link href='https://www.instagram.com'>instagram</Link>
+        <Link href={links.facebook}>facebook</Link>
+        <Link href={links.instagram}>instagram</Link>
       </Wrapper>
-      <Link>taki.film 2019</Link>
+      <Link href={links.takifilm}>taki.film 2019</Link>
     </Container>
   )
 }
@@ -38,7 +41,9 @@ const Link = styled.a`
   font-size: ${({ theme }) => theme.fontSize.m};
   text-decoration: underline;
 
-  ${({href, theme}) => href &&`
+  ${({ href, theme }) =>
+    href &&
+    `
     &:active {
       color: ${theme.color.lightblue};
     }
