@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <Container>
       <Photo
-        src={process.env.PUBLIC_URL + '/img/Miniatura1.jpg'}
+        src={process.env.PUBLIC_URL + '/img/atWork1-w2000px-compressed.jpg'}
         alt={'taki.film at work'}
       />
       <Text>
@@ -27,34 +27,48 @@ const AboutUs = () => {
 }
 
 const Container = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 1.875rem;
   position: relative;
   ${({ theme }) => theme.media.tablet`
-    display: flex;
-    align-items: center;;
+    flex-direction: row;
+    margin-top: 6.875rem;
+  `}
+  ${({ theme }) => theme.media.desktop`
+    margin-top: 7.875rem;  
   `}
 `
 const Photo = styled.img`
+  position: relative;
+  max-width: 38.125rem;
   width: 100%;
   ${({ theme }) => theme.media.tablet`
-    width: auto;
+    bottom: 5rem;
+    max-width: initial;
+    width: 34.375rem;
+  `}
+  ${({ theme }) => theme.media.desktop`
+    bottom: 6rem;
+    width: 48.375rem;
   `}
 `
 const Text = styled.div`
   box-sizing: border-box;
   padding-top: 0.625rem;
   padding-bottom: 1.25rem;
+  max-width: 38.125rem;
   ${({ theme }) => theme.media.tablet`
     text-align: left;
-    padding: 5.4375rem 0rem;
+    padding: 2rem 0rem;
     padding-right: 3.5rem;
     padding-left: 4.5rem;
-    // min-width: 42.0625rem;
+    max-width: initial;
   `}
   ${({ theme }) => theme.media.desktop`
     padding-right: 4.9375rem;
     padding-left: 5.9375rem;
-    // min-width: 57.9375rem;
   `}
 `
 const Title = styled.h3`
