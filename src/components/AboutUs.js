@@ -34,10 +34,10 @@ const Container = styled.section`
   position: relative;
   ${({ theme }) => theme.media.tablet`
     flex-direction: row;
-    margin-top: 6.875rem;
+    margin-top: 18.75rem;
   `}
   ${({ theme }) => theme.media.desktop`
-    margin-top: 7.875rem;  
+    margin-top: 18.625rem;  
   `}
 `
 const Photo = styled.img`
