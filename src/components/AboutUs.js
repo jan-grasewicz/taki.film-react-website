@@ -5,47 +5,43 @@ import LoseSidePadding from '../elements/LoseSidePadding'
 const AboutUs = () => {
   return (
     <Container>
-      <Content>
-        <Photo
-          src={process.env.PUBLIC_URL + '/img/Miniatura1.jpg'}
-          alt={'taki.film at work'}
-        />
-        <Text>
-          <Title>Kim jesteśmy?</Title>
-          <Desc>
-            Ekipą z trójmiasta która kocha tworzyć filmy.
-            <br />
-            Marka taki.film jest odpowiedzią na potrzeby naszych dotychczasowych
-            klientów. Wcześniej działaliśmy pod marką SureArts. Działamy na
-            terenie całego świata i nie boimy się żadnych wyzwań.
-          </Desc>
-          <StyledLoseSidePadding posAbsolute>
-            <BgRectangle />
-          </StyledLoseSidePadding>
-        </Text>
-      </Content>
+      <Photo
+        src={process.env.PUBLIC_URL + '/img/Miniatura1.jpg'}
+        alt={'taki.film at work'}
+      />
+      <Text>
+        <Title>Kim jesteśmy?</Title>
+        <Desc>
+          Ekipą z trójmiasta która kocha tworzyć filmy.
+          <br />
+          Marka taki.film jest odpowiedzią na potrzeby naszych dotychczasowych
+          klientów. Wcześniej działaliśmy pod marką SureArts. Działamy na
+          terenie całego świata i nie boimy się żadnych wyzwań.
+        </Desc>
+      </Text>
+      <StyledLoseSidePadding posAbsolute>
+        <BgRectangle />
+      </StyledLoseSidePadding>
     </Container>
   )
 }
 
-const Container = styled.section``
-const Content = styled.div`
+const Container = styled.section`
+  margin-top: 1.875rem;
+  position: relative;
   ${({ theme }) => theme.media.tablet`
     display: flex;
-    align-items: flex-end;
+    align-items: center;;
   `}
 `
 const Photo = styled.img`
-  padding-top: 1.875rem;
   width: 100%;
   ${({ theme }) => theme.media.tablet`
     width: auto;
-    max-width: 50%;
   `}
 `
 const Text = styled.div`
   box-sizing: border-box;
-  position: relative;
   padding-top: 0.625rem;
   padding-bottom: 1.25rem;
   ${({ theme }) => theme.media.tablet`
@@ -62,37 +58,34 @@ const Text = styled.div`
   `}
 `
 const Title = styled.h3`
-  color: ${props => props.theme.color.white};
-  font-size: ${props => props.theme.fontSize.xdouble};
+  color: ${({ theme }) => theme.color.white};
+  font-size: ${({ theme }) => theme.fontSize.xdouble};
   font-weight: 800;
   ${({ theme }) => theme.media.tablet`
-    font-size: ${props => props.theme.fontSize.xxxdouble};
+    font-size: ${theme.fontSize.xxxdouble};
   `}
 `
 const Desc = styled.p`
   padding-top: 1.25rem;
   ${({ theme }) => theme.media.tablet`
     padding-top: 2.5rem;
-    font-size: ${props => props.theme.fontSize.l};
+    font-size: ${({ theme }) => theme.fontSize.l};
     max-width: 52.5625rem;
   `}
 `
 const StyledLoseSidePadding = styled(LoseSidePadding)`
+  height: 100%;
+  z-index: -10;
   bottom: 0rem;
-  right: 0rem;
-  ${({ theme }) => theme.media.tablet`
-    height: 100%;
-  `}
 `
 const BgRectangle = styled.div`
   box-sizing: border-box;
-  background-color: ${props => props.theme.color.lightblue};
-  height: 24.625rem;
+  background-color: ${({ theme }) => theme.color.lightblue};
+  height: 85%;
   width: 100vw;
   position: absolute;
-  top: 0rem;
+  bottom: 0rem;
   right: 0rem;
-  z-index: -10;
   ${({ theme }) => theme.media.tablet`
     height: 100%;
   `}

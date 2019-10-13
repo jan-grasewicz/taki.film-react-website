@@ -9,13 +9,11 @@ const LoseSidePadding = styled.div`
     addMinusIfBoolean(theme.mainPadding.small, posAbsolute)};
 
   ${({ theme }) => theme.media.tablet`
-      width: 100vw;
       right: ${({ theme, posAbsolute }) =>
         addMinusIfBoolean(theme.mainPadding.medium, posAbsolute)};  
     `}
 
   ${({ theme }) => theme.media.desktop`
-      width: 100vw;
       right: ${({ theme, posAbsolute }) =>
         addMinusIfBoolean(theme.mainPadding.large, posAbsolute)};
     `}
