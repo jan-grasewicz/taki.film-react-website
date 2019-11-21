@@ -3,21 +3,27 @@ import styled from 'styled-components'
 
 const PlayerList = ({ playlist, handleClick, active }) => {
   return (
-    <List>
-      {playlist &&
-        playlist.map(video => (
-          <Item
-            key={video.url}
-            onClick={e => handleClick(e, video)}
-            isActive={video.url === active.url}
-          >
-            {video.title}
-          </Item>
-        ))}
-    </List>
+    <Container>
+      <List>
+        {playlist &&
+          playlist.map(video => (
+            <Item
+              key={video.url}
+              onClick={e => handleClick(e, video)}
+              isActive={video.url === active.url}
+            >
+              {video.title}
+            </Item>
+          ))}
+      </List>
+    </Container>
   )
 }
 
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+`
 const List = styled.ul`
   display: flex;
   align-items: center;
@@ -36,7 +42,8 @@ const List = styled.ul`
 `
 const Item = styled.li`
   color: ${({ theme, isActive }) => theme.color[isActive ? 'white' : 'gray']};
-  font-size: ${({ theme, isActive }) => theme.fontSize[isActive ? 'xxl' : 'xs']};
+  font-size: ${({ theme, isActive }) =>
+    theme.fontSize[isActive ? 'xxl' : 'xs']};
   font-weight: ${({ isActive }) => (isActive ? '800' : '400')};
   white-space: nowrap;
   padding: 0rem 0.3125rem;
