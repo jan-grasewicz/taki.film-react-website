@@ -3,22 +3,21 @@ import styled from 'styled-components'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-
-// const NextArrow = ({ className, onClick, style }) => {
-//   return (
-//     <Arrow
-//       className={'slick-next slick-arrow'}
-//       onClick={onClick}
-//       // style={{ ...style, display: 'block' }}
-//     >
-//       >>>
-//     </Arrow>
-//   )
-// }
-
-// const Arrow = styled.div``
+import Arrow from '../elements/Arrow'
 
 const Carousel = () => {
+
+  const logotypes = [
+    'logotype1.png',
+    'logotype2.png',
+    'logotype3.png',
+    'logotype4.png',
+    'logotype5.png',
+    'logotype6.png',
+    'logotype7.png',
+    'logotype8.png'
+  ]
+
   return (
     <Container>
       <StyledSlider
@@ -39,33 +38,16 @@ const Carousel = () => {
             }
           }
         ]}
-        // prevArrow={<PrevArrow />}
-        // nextArrow={<NextArrow />}
+        prevArrow={<Arrow />}
+        nextArrow={<Arrow right />}
       >
-        <div>
-          <Logo src={process.env.PUBLIC_URL + '/img/logotypes/logotype1.png'} />
-        </div>
-        <div>
-          <Logo src={process.env.PUBLIC_URL + '/img/logotypes/logotype2.png'} />
-        </div>
-        <div>
-          <Logo src={process.env.PUBLIC_URL + '/img/logotypes/logotype3.png'} />
-        </div>
-        <div>
-          <Logo src={process.env.PUBLIC_URL + '/img/logotypes/logotype4.png'} />
-        </div>
-        <div>
-          <Logo src={process.env.PUBLIC_URL + '/img/logotypes/logotype5.png'} />
-        </div>
-        <div>
-          <Logo src={process.env.PUBLIC_URL + '/img/logotypes/logotype6.png'} />
-        </div>
-        <div>
-          <Logo src={process.env.PUBLIC_URL + '/img/logotypes/logotype7.png'} />
-        </div>
-        <div>
-          <Logo src={process.env.PUBLIC_URL + '/img/logotypes/logotype8.png'} />
-        </div>
+        {logotypes.map(logo => (
+          <div>
+            <Logo
+              src={`${process.env.PUBLIC_URL}/img/logotypes/${logo}`}
+            />
+          </div>
+        ))}
       </StyledSlider>
     </Container>
   )
@@ -78,7 +60,6 @@ const Container = styled.div`
   height: 3.5rem;
 `
 const StyledSlider = styled(Slider)`
-  /* color: ${props => props.theme.color.lightGray}; */
   display: flex;
   align-items: center;
   width: 70%;
