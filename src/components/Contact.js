@@ -15,8 +15,8 @@ const Contact = () => {
         Odpowiedni ludzie do danego projektu to podstawa.
       </Descr>
       <ContactInfo>
-        <Button>+48 792 211 609</Button>
-        <Button>hej@taki.film</Button>
+        <Button href='tel:+48-792-211-609'>+48 792 211 609</Button>
+        <Button href='mailto:hej@taki.film' target='_blank' rel='noopener noreferrer'>hej@taki.film</Button>
       </ContactInfo>
     </Container>
   )
@@ -54,15 +54,19 @@ const ContactInfo = styled.address`
     padding-top: 6.625rem;
   `}
 `
-const Button = styled.button`
-  margin: 0.3125rem 0rem;
-  width: 100%;
-  height: 5rem;
+const Button = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: ${({ theme }) => theme.color.white};
   font-size: ${({ theme }) => theme.fontSize.xxl};
   background-color: transparent;
   border: 1px solid ${({ theme }) => theme.color.darkGray};
   border-radius: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
+  margin: 0.3125rem 0rem;
+  width: 100%;
+  height: 5rem;
+  cursor: pointer;
 
   ${({ theme }) => theme.media.tablet`
     font-size: ${({ theme }) => theme.fontSize.double};
