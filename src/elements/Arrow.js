@@ -20,7 +20,7 @@ const Arrow = ({ right, ...rest }) => {
           fill='none'
           stroke={theme.color.lightGray}
           strokeWidth='3'
-          stroke-linecap='round'
+          strokeLinecap='round'
         />
       </svg>
   )
