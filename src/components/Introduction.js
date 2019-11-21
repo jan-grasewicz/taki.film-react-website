@@ -30,7 +30,7 @@ const Introduction = () => {
           Taki który przyciąga uwagę, zapada w pamięć i&nbsp;wyróżnia się
           jakością.
         </Description>
-        <Button>NAPISZ DO NAS</Button>
+        <Button href='mailto:hej@taki.film' target='_blank' rel='noopener noreferrer'>NAPISZ DO NAS</Button>
       </Text>
       <StyledLoseSidePadding posAbsolute>
         <BgRectangle />
@@ -113,7 +113,10 @@ const Description = styled.p`
     max-width: 25rem;
   `}
 `
-const Button = styled.button`
+const Button = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: ${({ theme }) => theme.fontSize.s};
   font-weight: 800;
   color: ${({ theme }) => theme.color.white};
@@ -121,8 +124,9 @@ const Button = styled.button`
   border: none;
   width: 100%;
   height: 4.0625rem;
-
   margin: 1.875rem 0rem 2.5rem;
+  cursor: pointer;
+
   ${({ theme }) => theme.media.tablet`
     font-size: ${({ theme }) => theme.fontSize.l};
     width: 20.1875rem;
