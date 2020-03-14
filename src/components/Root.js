@@ -7,7 +7,7 @@ import Carousel from './Carousel'
 import AboutUs from './AboutUs'
 import Contact from './Contact'
 import Footer from './Footer'
-
+import Carousel3 from './Carousel3'
 
 const Root = () => {
   return (
@@ -16,7 +16,8 @@ const Root = () => {
       <main>
         <Introduction />
         <Portfolio />
-        <Carousel>{'<<-Carousel->>'}</Carousel>
+        <Carousel />
+        <Carousel3 />
         <AboutUs />
         <Contact />
       </main>
