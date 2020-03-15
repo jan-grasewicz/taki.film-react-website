@@ -55,6 +55,9 @@ const Container = styled.div`
   align-items: center;
   height: 3.5rem;
 `
+const StyledArrow = styled(Arrow)`
+  height: 20px;
+`
 const Button = styled.button`
   background: none;
   border: none;
@@ -70,11 +73,8 @@ const Button = styled.button`
     transform: scale(1.1);
   }
   &:active ${StyledArrow} {
-    transform: scale(0.85);
+    transform: scale(0.9);
   }
-`
-const StyledArrow = styled(Arrow)`
-  height: 20px;
 `
 const LogoWrap = styled.div`
   pointer-events: none;
