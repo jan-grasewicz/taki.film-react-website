@@ -9,7 +9,7 @@ const PlayerList = ({ playlist, handleClick, active }) => {
           playlist.map(video => (
             <li key={video.url}>
               <Button
-                name={video.title}
+                aria-label={video.title}
                 onClick={e => handleClick(e, video)}
                 isActive={video.url === active.url}
               >

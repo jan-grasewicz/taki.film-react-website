@@ -20,7 +20,7 @@ const CompanyCarousel = () => {
   return (
     <Container>
       <Button
-        name='previous slide'
+        aria-label='previous slide'
         onClick={() => carouselRef && carouselRef.current && carouselRef.current.previousSlide()}
       >
         <StyledArrow />
@@ -37,7 +37,7 @@ const CompanyCarousel = () => {
       </ResponsiveCarousel>
 
       <Button
-        name='next slide'
+        aria-label='next slide'
         onClick={() => carouselRef && carouselRef.current && carouselRef.current.nextSlide()}
       >
         <StyledArrow right />
