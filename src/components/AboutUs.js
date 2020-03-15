@@ -9,24 +9,12 @@ const AboutUs = () => {
   return (
     <Container>
       <Photo
-        src={process.env.PUBLIC_URL + '/img/atWork1-w2000px-compressed.jpg'}
+        src={`${process.env.PUBLIC_URL}/img/atWork1-w2000px-compressed.jpg`}
         alt={'taki.film at work'}
       />
       <Text>
         <Title>Kim jesteśmy?</Title>
-        <Desc>
-          {aboutUs &&
-            aboutUs.desc.map((line, index) =>
-              !index ? (
-                line
-              ) : (
-                <React.Fragment>
-                  <br />
-                  {line}
-                </React.Fragment>
-              )
-            )}
-        </Desc>
+        <Desc>{aboutUs && aboutUs.desc.map((line, index) => <p key={index}>{line}</p>)}</Desc>
       </Text>
       <StyledLoseSidePadding posAbsolute>
         <BgRectangle />
@@ -88,7 +76,7 @@ const Title = styled.h3`
     font-size: ${theme.fontSize.xxxdouble};
   `}
 `
-const Desc = styled.p`
+const Desc = styled.section`
   padding-top: 1.25rem;
   ${({ theme }) => theme.media.tablet`
     padding-top: 2.5rem;

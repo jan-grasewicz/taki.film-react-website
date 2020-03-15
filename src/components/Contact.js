@@ -8,15 +8,17 @@ const Contact = () => {
       <Descr>
         Nasz zespół składa się z freelancerów.
         <br />
-        Filmowców, animatorów, dżwiękowców, grafików, fotografów, producentów
-        którzy są dobierani według potrzeb projektu.
+        Filmowców, animatorów, dżwiękowców, grafików, fotografów, producentów, którzy są dobierani
+        według potrzeb projektu.
         <br />
         <br />
         Odpowiedni ludzie do danego projektu to podstawa.
       </Descr>
       <ContactInfo>
         <Button href='tel:+48-792-211-609'>+48 792 211 609</Button>
-        <Button href='mailto:hej@taki.film' target='_blank' rel='noopener noreferrer'>hej@taki.film</Button>
+        <Button href='mailto:hej@taki.film' target='_blank' rel='noopener noreferrer'>
+          hej@taki.film
+        </Button>
       </ContactInfo>
     </Container>
   )

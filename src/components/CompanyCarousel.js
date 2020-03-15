@@ -20,11 +20,8 @@ const CompanyCarousel = () => {
   return (
     <Container>
       <Button
-        onClick={() =>
-          carouselRef &&
-          carouselRef.current &&
-          carouselRef.current.previousSlide()
-        }
+        name='previous slide'
+        onClick={() => carouselRef && carouselRef.current && carouselRef.current.previousSlide()}
       >
         <StyledArrow />
       </Button>
@@ -38,10 +35,10 @@ const CompanyCarousel = () => {
           </LogoWrap>
         ))}
       </ResponsiveCarousel>
+
       <Button
-        onClick={() =>
-          carouselRef && carouselRef.current && carouselRef.current.nextSlide()
-        }
+        name='next slide'
+        onClick={() => carouselRef && carouselRef.current && carouselRef.current.nextSlide()}
       >
         <StyledArrow right />
       </Button>
@@ -68,8 +65,10 @@ const Button = styled.button`
   &:hover {
     cursor: pointer;
   }
-  &:focus ${StyledArrow} {
+  &:focus {
     outline: none;
+  }
+  &:focus ${StyledArrow} {
     transform: scale(1.1);
   }
   &:active ${StyledArrow} {

@@ -7,13 +7,15 @@ const PlayerList = ({ playlist, handleClick, active }) => {
       <List>
         {playlist &&
           playlist.map(video => (
-            <Item
-              key={video.url}
-              onClick={e => handleClick(e, video)}
-              isActive={video.url === active.url}
-            >
-              {video.title}
-            </Item>
+            <li key={video.url}>
+              <Button
+                name={video.title}
+                onClick={e => handleClick(e, video)}
+                isActive={video.url === active.url}
+              >
+                {video.title}
+              </Button>
+            </li>
           ))}
       </List>
     </Container>
@@ -40,14 +42,23 @@ const List = styled.ul`
     padding: 0rem 0rem 0rem 3.75rem;
   `}
 `
-const Item = styled.li`
+const Button = styled.button`
+  background: none;
+  border: none;
+
   color: ${({ theme, isActive }) => theme.color[isActive ? 'white' : 'gray']};
-  font-size: ${({ theme, isActive }) =>
-    theme.fontSize[isActive ? 'xxl' : 'xs']};
+  font-size: ${({ theme, isActive }) => theme.fontSize[isActive ? 'xxl' : 'xs']};
   font-weight: ${({ isActive }) => (isActive ? '800' : '400')};
   white-space: nowrap;
   padding: 0rem 0.3125rem;
   cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.1s linear;
+
+  &:focus {
+    outline: none;
+    ${({ isActive }) => !isActive && 'transform: scale(1.1)'};
+  }
 
   ${({ theme, isActive }) => theme.media.tablet`
     font-size: ${theme.fontSize[isActive ? 'double' : 'l']};
