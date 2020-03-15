@@ -14,11 +14,8 @@ const GlobalStyle = createGlobalStyle`
   }
   
   body {
-    color: ${({theme}) => theme.color.white};
-    background-color: ${({theme}) => theme.color.black};
-  }
-  button:focus {
-    outline: none;
+    color: ${({ theme }) => theme.color.white};
+    background-color: ${({ theme }) => theme.color.black};
   }
 `
 
