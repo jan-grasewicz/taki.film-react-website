@@ -14,6 +14,7 @@ const Fonts = `
   src: local(''),
        url(${MuliLatin400Woff2}) format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url(${MuliLatin400Woff}) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
 }
 /* muli-700 - latin_latin-ext */
 @font-face {
@@ -23,6 +24,7 @@ const Fonts = `
   src: local(''),
        url(${MuliLatin700Woff2}) format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url(${MuliLatin700Woff}) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
 }
 /* muli-800 - latin_latin-ext */
 @font-face {
@@ -32,6 +34,7 @@ const Fonts = `
   src: local(''),
        url(${MuliLatin800Woff2}) format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url(${MuliLatin800Woff}) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
 }
 `
 export default Fonts
