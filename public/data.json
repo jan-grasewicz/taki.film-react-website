@@ -4,103 +4,100 @@
     "instagram": "https://www.instagram.com",
     "takifilm": ""
   },
+  "aboutUs": {
+    "desc": [
+      "Ekipą z trójmiasta która kocha tworzyć filmy.",
+      "Marka taki.film jest odpowiedzią na potrzeby naszych dotychczasowych klientów. Wcześniej działaliśmy pod marką SureArts. Działamy na terenie całego świata i nie boimy się żadnych wyzwań."
+    ]
+  },
   "showreel": {
     "url": "https://player.vimeo.com/video/313798158"
   },
   "portfolio": [
     {
-      "title": "Survival Race",
-      "fullTitle": "Relacja z wydarzenia sportowego",
+      "title": "Animacja",
+      "fullTitle": "#emocjeprocentuja",
+      "url": "https://player.vimeo.com/video/310084522",
+      "description": "Animacje są świetnym sposobem na przekazanie dużej ilości informacji w krótkim czasie - zachowując przy tym przejrzystość przekazu. Większość czasu tego projektu zajęło przygotowanie scenariusza dopasowanego do odbiorców, aby przekazać ważne informacje w lekki sposób. Na codzień zajmujemy się produkcją animacji o najróżniejszym zastosowaniu.",
+      "credits": [
+        [
+          {
+            "name": "Klient",
+            "entries": ["GCPU"]
+          },
+          {
+            "name": "Agencja",
+            "entries": ["ClubPR"]
+          },
+          {
+            "name": "Produkcja",
+            "entries": ["taki.film"]
+          },
+          {
+            "name": "Grafika",
+            "entries": ["Kamila Cegiełka-Mendalka"]
+          }
+        ],
+        [
+          {
+            "name": "Lektor",
+            "entries": ["Marek Kreft"]
+          },
+          {
+            "name": "Dźwięk",
+            "entries": ["taki.film"]
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Relacja",
+      "fullTitle": "Film z wydarzenia sportowego",
       "url": "https://player.vimeo.com/video/373108059",
-      "description": "Piach, błoto, pył, miliony endorfin czyli w skrócie SURVIVAL RACE!",
+      "description": "Piach, błoto, pył, miliony endorfin czyli w skrócie SURVIVAL RACE! Tworząc z filmy wydarzeń skupiamy się na uchwyceniu w dynamiczny sposób emocji i najbardziej charakterystycznych punktów wydarzenia które ustalamy na rozmowie wstępnej z organizatorami. Nie ważne czy to otwarcie nowego przedszkola czy ekstremalny rajd samochodowy - film ma zaciekawić każdego odbiorcę, przekazując przy tym pożądane informacje.",
       "credits": [
         [
           {
             "name": "Klient",
-            "entries": [
-              "BRENTO PRODUCTIONS"
-            ]
+            "entries": ["BRENTO PRODUCTIONS"]
           },
           {
             "name": "Zdjęcia",
-            "entries": [
-              "Marcin Piechowski",
-              "Jakub Szczęsny"
-            ]
+            "entries": ["Marcin Piechowski", "Jakub Szczęsny"]
           },
           {
-            "name": "Postprodukcja",
-            "entries": [
-              "taki.film"
-            ]
+            "name": "Produkcja",
+            "entries": ["taki.film"]
           }
         ]
       ]
     },
     {
-      "title": "How To Jump",
-      "fullTitle": "Film Instruktażowy",
-      "url": "https://player.vimeo.com/video/373111776",
-      "description": "Razem z parkami trampolin JUMPCITY stworzyliśmy serię filmów intruktażowych skierwoanych do młodzieży. Luźna forma i skondensowana wiedza przełożyła się na wysokie wyniki oglądalności serii - bez jakiejkolwiek promocji kanału.",
-      "credits": [
-        [
-          {
-            "name": "Klient",
-            "entries": [
-              "JUMPCITY sp. z. O.O."
-            ]
-          },
-          {
-            "name": "Zdjęcia",
-            "entries": [
-              "Marcin Piechowski"
-            ]
-          },
-          {
-            "name": "Postprodukcja",
-            "entries": [
-              "taki.film"
-            ]
-          }
-        ]
-      ]
-    },
-    {
-      "title": "Flugger SpecKlub",
-      "fullTitle": "Spot Reklamowy",
+      "title": "Spot Reklamowy",
+      "fullTitle": "Flugger Specklub",
       "url": "https://player.vimeo.com/video/281306937",
-      "description": "Flügger farby z myślą o specjalistach! taki.film z myślą o filmach! Zdjęcia zrealizowane w dwa dni, 4 Lokacje i super atmosfera na planie. A całość projektu zrealizowana w błyskawicznym czasie = specjaliści dla specjalistów!",
+      "description": "Flügger farby z myślą o specjalistach! taki.film z myślą o filmach! Zdjęcia zrealizowane w dwa dni, 4 Lokacje i super atmosfera na planie. A całość projektu zrealizowana w błyskawicznym czasie = specjaliści dla specjalistów! Reklama została przygotowana w 3ech różnych wersjach długościowych dla optymalnego wykorzystania w kampanii reklamowej.",
       "credits": [
         [
           {
             "name": "Klient",
-            "entries": [
-              "Flügger Sp. z o.o."
-            ]
+            "entries": ["Flügger Sp. z o.o."]
           },
           {
             "name": "Zdjęcia",
-            "entries": [
-              "Marcin Piechowski"
-            ]
+            "entries": ["Marcin Piechowski"]
           },
           {
-            "name": "Asystent Operatora",
-            "entries": [
-              "Jakub Szczęsny"
-            ]
+            "name": "Szwenkier",
+            "entries": ["Jakub Szczęsny"]
           },
           {
-            "name": "Postprodukcja",
-            "entries": [
-              "taki.film"
-            ]
+            "name": "Produkcja",
+            "entries": ["taki.film"]
           },
           {
             "name": "Animacja",
-            "entries": [
-              "Marcin Mikołajczyk"
-            ]
+            "entries": ["Marcin Mikołajczyk"]
           }
         ],
         [
@@ -114,133 +111,123 @@
           },
           {
             "name": "Lektor",
-            "entries": [
-              "Marek Kreft"
-            ]
+            "entries": ["Marek Kreft"]
           },
           {
             "name": "Makijaż",
-            "entries": [
-              "Martyna Wróblewska"
-            ]
-          },
-          {
-            "name": "Wsparcie sprzętowe i Oświetlenie",
-            "entries": [
-              "Panjulian.pl"
-            ]
+            "entries": ["Martyna Wróblewska"]
           }
         ]
       ]
     },
     {
-      "title": "SDA - Magia Świąt",
-      "fullTitle": "Film promujący szkolenia",
-      "url": "https://player.vimeo.com/video/312750216",
-      "description": "Czy film skierowany do korporacji z branży IT może pokazywać historię i być oryginalny? Oczywiście że tak! Z takiego założenia wyszliśmy współpracując z SDA Academy i Nordea. Świąteczna atmosfera, uśmiechy i życzliwość - to emocje które wyznaczyły rytm całego filmu.",
+      "title": "Spot Kinowy",
+      "fullTitle": "Zostań Superbohaterem!",
+      "url": "https://player.vimeo.com/video/383057844",
+      "description": "Każdy z nas, chciał kiedyś zostać superbohaterem.. Film docelowo wyświetlany w Kinach przed premierą jednego filmu z Superbohaterami. Do projektu wykorzystaliśmy ujęcia Slow Motion w wysokiej jakości 4K oraz znaleźliśmy aktora o umiejętnościach akrobatycznych w celu zachowania estetyki i wiarygodności w świecie fanów trampolin :).",
       "credits": [
         [
           {
             "name": "Klient",
-            "entries": [
-              "Software Development Academy"
-            ]
+            "entries": ["JUMPCITY Sp. z o.o."]
           },
           {
             "name": "Zdjęcia",
-            "entries": [
-              "Marcin Piechowski"
-            ]
+            "entries": ["Marcin Piechowski"]
           },
           {
-            "name": "Postprodukcja",
-            "entries": [
-              "taki.film"
-            ]
+            "name": "Produkcja",
+            "entries": ["taki.film"]
+          },
+          {
+            "name": "Animacja",
+            "entries": ["Marcin Mikołajczyk"]
           }
         ],
         [
           {
             "name": "Lektor",
-            "entries": [
-              "Marek Kreft"
-            ]
+            "entries": ["Marek Kreft"]
+          }
+        ],
+        [
+          {
+            "name": "Charakteryzacja",
+            "entries": ["Mariola Smolińska"]
           }
         ]
       ]
     },
     {
-      "title": "Grano Residence",
-      "fullTitle": "Film Deweloperski",
-      "url": "https://player.vimeo.com/video/310100238",
-      "description": "Grano Residence to inwestycja w samym sercu Gdańskiej starówki. Krótki film promocyjny ma zachęcić potencjalnego klienta do zapoznania się z ofertą. W filmie dużą rolę odgrywają ujęcia z drona pokazujące malowniczą okolicę hotelu, oraz kadry w których widać symboliczne miejsca dla Gdańskiej starówki.",
+      "title": "Spot Społeczny",
+      "fullTitle": "GOPZ",
+      "url": "https://player.vimeo.com/video/383541761",
+      "description": "Gdański Ośrodek Promcoji Zdrowia zgłosił się do nas w potrzebie stworzenia przyjemnego i przede wszystkim autentycznego filmu który dotrze do bardzo szerokiej grupy odbiorców, od najmłodszych dzieci do seniorów. Aby uatrakcyjnic przekaz, do wykonania ujeć wykorzystaliśmy drona, elektroniczny stabilizator kamery oraz slider.",
       "credits": [
         [
           {
             "name": "Klient",
-            "entries": [
-              "Dekpol"
-            ]
+            "entries": ["Miasto Gdańsk"]
           },
           {
-            "name": "Zdjęcia",
-            "entries": [
-              "Marcin Piechowski"
-            ]
-          },
-          {
-            "name": "Postprodukcja",
-            "entries": [
-              "taki.film"
-            ]
-          }
-        ]
-      ]
-    },
-    {
-      "title": "#emocjeprocentują",
-      "fullTitle": "Animacja 2D",
-      "url": "https://player.vimeo.com/video/310084522",
-      "description": "Przygotowanie animacji do młodego odbiorcy na poważny temat nie jest prostą rzeczą. Większość czasu tego projektu zajęło przygotowanie scenariusza dopasowanego do odbiorców, aby przekazać ważne informacje w lekki sposób. Link do drugiej animacji wykonanej w ramach tego projektu: https://player.vimeo.com/video/310087916",
-      "credits": [
-        [
-          {
-            "name": "Klient",
-            "entries": [
-              "Gdańskie Centrum Profilaktyki Uzależnień"
-            ]
-          },
-          {
-            "name": "Agencja",
-            "entries": [
-              "ClubPR"
-            ]
-          },
-          {
-            "name": "Produkcja i Animacja",
-            "entries": [
-              "taki.film"
-            ]
-          },
-          {
-            "name": "Przygotowanie Grafiki",
-            "entries": [
-              "Kamila Cegiełka-Mendalka/ClubPR"
-            ]
+            "name": "Produkcja",
+            "entries": ["taki.film"]
           }
         ],
         [
           {
             "name": "Lektor",
-            "entries": [
-              "Marek Kreft"
-            ]
+            "entries": ["Marek Kreft"]
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Nietypowe",
+      "fullTitle": "Portman x Igor Falecki",
+      "url": "https://player.vimeo.com/video/383763278",
+      "description": "Lubimy projekty które wychodzą poza ramy. I tak było w tym przypadku. Gdy zostaliśmy zapytani o film nowego produktu Gdyńskiej firmy oświetleniowej - powiedzieliśmy \"zróbmy to inaczej\", pokażmy historię. P3 Pixel to 3cia lampa producenta, która powstała z pasji i dążenia do perfekcji projektantów firmy. Postanowiliśmy zestawić historie tej lampy, z prawdziwą historia młodej legendy w świecie perkusji, Igora Faleckiego.",
+      "credits": [
+        [
+          {
+            "name": "Klient",
+            "entries": ["Portman Lights Sp. z o.o."]
           },
           {
-            "name": "Udźwiękowienie",
-            "entries": [
-              "taki.film"
-            ]
+            "name": "Produkcja",
+            "entries": ["taki.film"]
+          },
+          {
+            "name": "Perkusista",
+            "entries": ["Igor Falecki"]
+          }
+        ],
+        [
+          {
+            "name": "Lektor",
+            "entries": ["Marek Kreft"]
+          }
+        ]
+      ]
+    },
+    {
+      "title": "YouTube",
+      "fullTitle": "Seria filmów Instruktażowych",
+      "url": "https://player.vimeo.com/video/373111776",
+      "description": "Razem z parkami trampolin JUMPCITY stworzyliśmy serię filmów intruktażowych \"How To JUMP\" skierowanych do młodzieży. Luźna forma i skondensowana wiedza przełożyła się na wysokie wyniki oglądalności serii ( sporo ponad pół miliona wyświetleń ) - bez jakiejkolwiek promocji kanału.",
+      "credits": [
+        [
+          {
+            "name": "Klient",
+            "entries": ["JUMPCITY Sp. z. o.o."]
+          },
+          {
+            "name": "Produkcja",
+            "entries": ["taki.film"]
+          },
+          {
+            "name": "Aktor",
+            "entries": ["Michał Lisiecki"]
           }
         ]
       ]

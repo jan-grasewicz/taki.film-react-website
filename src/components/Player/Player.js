@@ -23,6 +23,7 @@ const Player = ({ playlist }) => {
       <StyledLoseSidePadding>
         <IFrameWrapper>
           <IFrame
+            title='video player'
             src={active && active.url}
             max-width='640'
             height='320'
@@ -31,11 +32,7 @@ const Player = ({ playlist }) => {
             allowFullScreen
           />
         </IFrameWrapper>
-        <PlayerList
-          playlist={playlist}
-          handleClick={handleClick}
-          active={active}
-        />
+        <PlayerList playlist={playlist} handleClick={handleClick} active={active} />
       </StyledLoseSidePadding>
       <Info>
         <PlayerDesc title={active.fullTitle} description={active.description} />

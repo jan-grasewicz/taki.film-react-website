@@ -1,9 +1,11 @@
 import { createGlobalStyle } from 'styled-components'
+import Fonts from '../fonts/Fonts'
 import Reset from './Reset'
 
 const GlobalStyle = createGlobalStyle`
+  ${Fonts}
   ${Reset}
-  
+
   html, body {
     font-size: 16px;
     font-family: 'Muli', sans-serif;
@@ -14,11 +16,8 @@ const GlobalStyle = createGlobalStyle`
   }
   
   body {
-    color: ${({theme}) => theme.color.white};
-    background-color: ${({theme}) => theme.color.black};
-  }
-  button:focus {
-    outline: none;
+    color: ${({ theme }) => theme.color.white};
+    background-color: ${({ theme }) => theme.color.black};
   }
 `
 

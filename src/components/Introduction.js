@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { SiteContext } from '../contexts/SiteContext'
 import LoseSidePadding from '../elements/LoseSidePadding'
 
-
 const Introduction = () => {
   const { showreel } = useContext(SiteContext)
   return (
@@ -14,6 +13,7 @@ const Introduction = () => {
       </TitleMobile>
       <ShowreelWrapper>
         <Showreel
+          title='Showreel'
           src={showreel && showreel.url}
           frameBorder='0'
           allow='autoplay; fullscreen'
@@ -27,10 +27,11 @@ const Introduction = () => {
         </TitleDesktop>
         <Header>taki.film czyli jaki?</Header>
         <Description>
-          Taki który przyciąga uwagę, zapada w pamięć i&nbsp;wyróżnia się
-          jakością.
+          Taki który przyciąga uwagę, zapada w pamięć i&nbsp;wyróżnia się jakością.
         </Description>
-        <Button href='mailto:hej@taki.film' target='_blank' rel='noopener noreferrer'>NAPISZ DO NAS</Button>
+        <Button href='mailto:hej@taki.film' target='_blank' rel='noopener noreferrer'>
+          NAPISZ DO NAS
+        </Button>
       </Text>
       <StyledLoseSidePadding posAbsolute>
         <BgRectangle />
@@ -149,6 +150,5 @@ const BgRectangle = styled.div`
     top: 0rem;
     right: 0rem;
   `}
-
 `
 export default Introduction
